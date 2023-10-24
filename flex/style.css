@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+
+header {
+  background: rgb(241, 188, 90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+
+nav {
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+footer {
+  background: rgb(109, 104, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+
+article {
+  background: seagreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 190%;
+}
+
+article div p {
+  background: white;
+  margin: 10px;
+}
+
+
+/* media screen pour ecran pc et plus*/
+@media only screen and (min-width : 990px) {
+
+body{
+    background: seagreen;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: rgb(241, 188, 90);
+  text-align: center;
+  padding: 20px;
+  height: 10%;
+}
+
+
+nav {
+  background: orange;
+  text-align: center;
+  padding: 20px;
+}
+
+article {
+  background: seagreen;
+  text-align: center;
+  padding: 20px;
+  height: 100%;
+}
+
+footer {
+  background: rgb(109, 104, 250);
+  text-align: center;
+  padding: 20px;
+  height: 10%;
+}
+}
+
